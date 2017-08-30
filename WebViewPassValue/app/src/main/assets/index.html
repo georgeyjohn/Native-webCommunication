@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebView Communication</title>
+    <script type="text/javascript">
+
+function callFromApp(test) {
+	var component = document.getElementById("input");
+	component.value = component.value + "JavaScript called from app! - "+test;
+}
+function callFromAppWithReturn() {
+    var component = document.getElementById("input");
+	return 'Hello from JavaScript - ' + component.value;
+}
+
+
+
+
+    </script>
+</head>
+<body>
+<p></p>
+<a href="cusurl://toast/">Call to NativeApp through URL</a>
+</p>
+<p>
+    <button onclick="interface.callFromJS(callFromAppWithReturn())">Call to Native App from Web</button>
+</p>
+<p>
+    <textarea rows="5" cols="30" id="input" placeholder="Hello from JavaScript"></textarea>
+</p>
+</body>
+</html>

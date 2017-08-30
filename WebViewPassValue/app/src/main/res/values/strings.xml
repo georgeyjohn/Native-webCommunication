@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WebView-Native Communication</string>
+    <string name="btn_name">View</string>
+    <string name="tv_text">Message</string>
+    <string name="button_title">Call to Web Page</string>
+    <string name="button_title_with_return">Call to Web Page return value</string>
+    <string name="hintCustom">Text Pass to Web Page</string>
+    <string name="urlCall">Call from the web Page URL, Press back button to return.</string>
+    <string name="back">Back</string>
+
+</resources>
